@@ -1,3 +1,41 @@
+"use strict";
+
+////////////////////////////////////////////////////////
+// Coding Challenge #1
+
+// const calcAverage = (num1, num2, num3) => (num1 + num2 + num3) / 3;
+//
+// const avgDolphins = calcAverage(44, 23, 71);
+// const avgKoalas = calcAverage(65, 54, 49);
+//
+// function checkWinner(scoreDolphins, scoreKoalas) {
+//   scoreDolphins >= scoreKoalas * 2
+// ? console.log(`Dolphins win (${scoreDolphins} vs ${scoreKoalas})`)
+// : scoreDolphins * 2 <= scoreKoalas
+// ? console.log(`Koalas win (${scoreKoalas} vs ${scoreDolphins})`)
+// : console.log(`No team wins`);
+// }
+//
+// checkWinner(avgDolphins, avgKoalas);
+//
+
+////////////////////////////////////////////////////////
+// Coding Challenge #2
+
+// const calcTip = (bill) =>
+//   50 <= bill && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// const bills = [125, 555, 44];
+
+// console.log(bills);
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// console.log(tips);
+
+// const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+// console.log(totals);
+
 /*
 const john = {
     fullName : "John Smith",
