@@ -1,5 +1,6 @@
 'use strict';
 
+// Selecting Elements
 const players = document.querySelectorAll('.player');
 const player1 = document.querySelector('.player--0');
 const player2 = document.querySelector('.player--1');
@@ -8,6 +9,7 @@ const btnNew = document.querySelector('.btn--new');
 let btnRoll = document.querySelector('.btn--roll');
 let btnHold = document.querySelector('.btn--hold');
 
+// Function to reset all game elements
 function resetGame() {
   for (let i = 0; i < players.length; i++) {
     resetPlayerScore(players[i]);
@@ -20,17 +22,22 @@ function resetGame() {
   player1.classList.add('player--active');
 }
 
+// function to reset a players score
 function resetPlayerScore(player) {
   player.querySelector('.score').textContent = 0;
 }
+
+// function to replace the current players current-score
 function resetCurrentScore(player) {
   player.querySelector('.current-score').textContent = 0;
 }
 
+// Function to get the current active player
 function getActivePlayer() {
   return document.querySelector('.player--active');
 }
 
+// Functions for button press
 function rollDice() {
   let rolledNum = Math.trunc(Math.random() * 6) + 1;
   const activePlayer = getActivePlayer();
@@ -79,6 +86,7 @@ function switchPlayer() {
   }
 }
 
+// Starting Code
 resetGame();
 
 btnNew.addEventListener('click', resetGame);
